@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @cat.name %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @cat.user_id %>
+</p>
+
+<p>
+  <b>client_id:</b>
+  <%= @cat.shared_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_cat_path(@cat) %> |
+<%= link_to 'Back', cats_path %>

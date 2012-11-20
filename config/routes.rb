@@ -1,4 +1,9 @@
 BudgitServer::Application.routes.draw do
+  resources :cats
+  resources :users
+  match "/sync", to: 'application#index', via: [:post,:get]
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
